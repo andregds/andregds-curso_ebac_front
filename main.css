@@ -1,0 +1,130 @@
+/*h1 {
+    color: green;
+}
+
+h2 {
+    color: green;
+}
+
+-- selecionar um elemento atravez do ID  (OBS:  id é unico na pagina)  
+#economia h2{
+    color: gold;
+}
+
+-- selecionar um elemento atravez da CLASS 
+.creatin-date{
+    color: rgb(102, 102, 102);
+}
+
+-- aplica a estilização a tudo
+* {
+    color: red;
+}
+
+*/
+
+
+/*  Reset  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Vai alterar somente o header do body */
+body > header{
+    background-color: rgb(0, 83, 116);
+    padding: 16px 0;  /* adiciona espaçamento nas laterais e no topo*/
+    color: rgb(240, 240, 255);
+}
+
+header .container{
+    display: flex;  /* mantem um elemento ao lado do outro */
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header li{
+    display: inline;   /* Coloca os elementos em linha*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-left: 16px;
+
+}
+
+header li a{
+    color: white;
+    text-decoration:none;
+}
+
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.artigos {
+    display: flex;
+    flex-wrap: wrap; /* Faz com que a proxima noticia seja alinhada a baixo */
+    justify-content:  space-between;  /* distribui o espaço que sobrou entre os itens*/
+}
+
+.artigos article img{
+    height: 180px;
+}
+
+.artigos article {
+    width: 30%;
+
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+
+}
+
+section h2, 
+.artigos article{
+    margin-bottom: 16px;
+    
+}
+
+.artigos article h3 {
+    margin-top: 16px;
+    margin-bottom: 8px;   
+}
+
+
+/* Botão ler mais */
+.artigos article a{
+    background-color: rgb(172, 172, 172);
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;  /* tira a sobreposição do conteudo ( botão Ler mais) */
+}
+
+#economia{
+    background-color: rgb(219, 219, 219);
+}
+
+
+#tecnologia {
+    background-color: rgb(218, 227, 255);
+
+}
+
+#esportes {
+    background-color: rgb(215, 255, 210);
+}
+
+#entreterimento{
+    background-color: rgb(255, 185, 185);
+}
